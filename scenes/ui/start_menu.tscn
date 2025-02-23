@@ -1,0 +1,137 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnclnc5cutohk"]
+
+[ext_resource type="Shader" path="res://assets/shaders/background.gdshader" id="1_lt8pw"]
+[ext_resource type="Texture2D" uid="uid://b5skr2s5soqx3" path="res://assets/textures/logo2-C9SU2BrI.png" id="2_7t0fa"]
+[ext_resource type="FontFile" uid="uid://bq5g6yab5irhe" path="res://assets/fonts/m6x11plus.ttf" id="3_e6cek"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ldddy"]
+shader = ExtResource("1_lt8pw")
+shader_parameter/polar_coordinates = false
+shader_parameter/polar_center = Vector2(0.5, 0.5)
+shader_parameter/polar_zoom = 1.0
+shader_parameter/polar_repeat = 1.0
+shader_parameter/spin_rotation = 0.0
+shader_parameter/spin_speed = 2.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.827451, 0, 0, 1)
+shader_parameter/colour_2 = null
+shader_parameter/colour_3 = Color(0, 0, 0.607843, 1)
+shader_parameter/contrast = 2.17
+shader_parameter/lighting = 0.79
+shader_parameter/spin_amount = 0.37
+shader_parameter/pixel_filter = 657.09
+
+[node name="StartMenu" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+material = SubResource("ShaderMaterial_ldddy")
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_direction = 1
+layout_mode = 0
+offset_right = 1294.0
+offset_bottom = 728.0
+scale = Vector2(0.89, 0.89)
+theme_override_constants/separation = 65
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(585.615, 204.055)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+size_flags_stretch_ratio = 0.0
+texture = ExtResource("2_7t0fa")
+expand_mode = 1
+
+[node name="LogoLabel" type="Label" parent="Control/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 36
+text = "Mod Designer
+"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 130
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Playing Cards"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Decks"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 130
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Tarot Cards"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Jokers"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 130
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Spectral Cards"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Vouchers"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 130
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Planet Cards"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Custom"
