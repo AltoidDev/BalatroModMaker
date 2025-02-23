@@ -7,9 +7,4 @@ Assistance would be appreciated, espicially if you have experience with modding 
 A modding tool for [Balatro](https://www.playbalatro.com), attempting to make modding more accesable, similar to MCreator for Minecraft. 
 Main menu shader by [xxidbr9](https://godotshaders.com/shader/balatro-background-shader/).
 
-Future plans:
--Submenus for each modded feature
-**-Scripts to generate lua code from selections**
--Mod customization (Name, author, version, etc)
--Ability to add dependancies to other mods
--A way to import custom textures
+Future plans: Check Projects Tab
