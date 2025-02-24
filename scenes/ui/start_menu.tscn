@@ -68,7 +68,7 @@ horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 100
+theme_override_constants/separation = 60
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
@@ -80,7 +80,7 @@ alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_e6cek")
 theme_override_font_sizes/font_size = 46
-text = "Playing Cards"
+text = "Editions"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -131,6 +131,22 @@ theme_override_font_sizes/font_size = 46
 text = "Planet Cards"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Boss Blinds"
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 130
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer5"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_font_sizes/font_size = 46
+text = "Stickers"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer5"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_e6cek")
 theme_override_font_sizes/font_size = 46
