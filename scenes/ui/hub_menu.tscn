@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://bnclnc5cutohk"]
 
-[ext_resource type="Shader" path="res://assets/shaders/background.gdshader" id="1_lt8pw"]
-[ext_resource type="Texture2D" uid="uid://b5skr2s5soqx3" path="res://assets/textures/logo2-C9SU2BrI.png" id="2_7t0fa"]
-[ext_resource type="FontFile" uid="uid://bq5g6yab5irhe" path="res://assets/fonts/m6x11plus.ttf" id="3_e6cek"]
+[ext_resource type="Shader" path="res://assets/shaders/background.gdshader" id="1_wxs6k"]
+[ext_resource type="Texture2D" uid="uid://b5skr2s5soqx3" path="res://assets/textures/logo2-C9SU2BrI.png" id="2_0skbu"]
+[ext_resource type="FontFile" uid="uid://bq5g6yab5irhe" path="res://assets/fonts/m6x11plus.ttf" id="3_bltnu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ldddy"]
-shader = ExtResource("1_lt8pw")
+shader = ExtResource("1_wxs6k")
 shader_parameter/polar_coordinates = false
 shader_parameter/polar_center = Vector2(0.5, 0.5)
 shader_parameter/polar_zoom = 1.0
@@ -21,7 +21,7 @@ shader_parameter/lighting = 0.79
 shader_parameter/spin_amount = 0.37
 shader_parameter/pixel_filter = 657.09
 
-[node name="StartMenu" type="Node2D"]
+[node name="HubMenu" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -53,14 +53,14 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 2
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("2_7t0fa")
+texture = ExtResource("2_0skbu")
 expand_mode = 1
 
 [node name="LogoLabel" type="Label" parent="Control/VBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 size_flags_stretch_ratio = 0.0
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 36
 text = "Mod Designer
 "
@@ -78,13 +78,13 @@ alignment = 1
 
 [node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Editions"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Decks"
 
@@ -94,13 +94,13 @@ theme_override_constants/separation = 130
 
 [node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Tarot Cards"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Jokers"
 
@@ -110,13 +110,13 @@ theme_override_constants/separation = 130
 
 [node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Spectral Cards"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Vouchers"
 
@@ -126,13 +126,13 @@ theme_override_constants/separation = 130
 
 [node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer4"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Planet Cards"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer4"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Boss Blinds"
 
@@ -142,12 +142,12 @@ theme_override_constants/separation = 130
 
 [node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer5"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Stickers"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer5"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_e6cek")
+theme_override_fonts/font = ExtResource("3_bltnu")
 theme_override_font_sizes/font_size = 46
 text = "Custom"
