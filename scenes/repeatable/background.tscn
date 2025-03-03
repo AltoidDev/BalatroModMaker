@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnpegha56kpfm"]
+
+[ext_resource type="Shader" path="res://assets/shaders/background.gdshader" id="1_dlqt0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fyh4w"]
+shader = ExtResource("1_dlqt0")
+shader_parameter/polar_coordinates = false
+shader_parameter/polar_center = Vector2(0.5, 0.5)
+shader_parameter/polar_zoom = 1.0
+shader_parameter/polar_repeat = 1.0
+shader_parameter/spin_rotation = 0.0
+shader_parameter/spin_speed = 2.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.827451, 0, 0, 1)
+shader_parameter/colour_2 = null
+shader_parameter/colour_3 = Color(0, 0, 0.607843, 1)
+shader_parameter/contrast = 2.17
+shader_parameter/lighting = 0.79
+shader_parameter/spin_amount = 0.37
+shader_parameter/pixel_filter = 657.09
+
+[node name="background" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_fyh4w")
+offset_right = 1152.0
+offset_bottom = 648.0
