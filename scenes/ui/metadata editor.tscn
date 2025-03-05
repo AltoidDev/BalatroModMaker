@@ -1,0 +1,158 @@
+[gd_scene load_steps=4 format=3 uid="uid://etju47k5hhbk"]
+
+[ext_resource type="Script" path="res://assets/scripts/metadata_editor.gd" id="1_hsty0"]
+[ext_resource type="PackedScene" uid="uid://bnpegha56kpfm" path="res://scenes/repeatable/background.tscn" id="2_jq27d"]
+[ext_resource type="FontFile" uid="uid://bq5g6yab5irhe" path="res://assets/fonts/m6x11plus.ttf" id="3_odo7h"]
+
+[node name="MetadataEditor" type="Node2D"]
+script = ExtResource("1_hsty0")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="background" parent="Control" instance=ExtResource("2_jq27d")]
+layout_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 1150.0
+offset_bottom = 648.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 41
+text = "Fields Marked with \"*\" Must Be Unique (Cant be used by other mods.)"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Mod ID* | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Mod Name | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Mod Author | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Mod Description | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Object Prefix* | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Load Priority | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_odo7h")
+theme_override_font_sizes/font_size = 31
+text = "Mod Version | "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
