@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://b00313dyhjhxy"]
+[gd_scene load_steps=4 format=3 uid="uid://b00313dyhjhxy"]
 
 [ext_resource type="PackedScene" uid="uid://bnpegha56kpfm" path="res://scenes/repeatable/background.tscn" id="1_1bfmd"]
+[ext_resource type="Script" path="res://assets/scripts/main_menu.gd" id="1_3anqv"]
 [ext_resource type="FontFile" uid="uid://bq5g6yab5irhe" path="res://assets/fonts/m6x11plus.ttf" id="2_s28i6"]
 
 [node name="MainMenu" type="Node2D"]
+script = ExtResource("1_3anqv")
 
 [node name="background" parent="." instance=ExtResource("1_1bfmd")]
 
@@ -11,6 +13,7 @@
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
+theme_override_constants/separation = 130
 
 [node name="Label" type="Label" parent="background/VBoxContainer"]
 layout_mode = 2
@@ -22,3 +25,15 @@ horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="background/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_s28i6")
+theme_override_font_sizes/font_size = 71
+text = "Mod Metadata"
+
+[node name="Button2" type="Button" parent="background/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_s28i6")
+theme_override_font_sizes/font_size = 71
+text = "Add things"
+
+[connection signal="pressed" from="background/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="background/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
