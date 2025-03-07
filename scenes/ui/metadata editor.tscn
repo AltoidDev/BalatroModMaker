@@ -44,7 +44,7 @@ text = "Mod ID* | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer"]
+[node name="LineEditID" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
@@ -62,7 +62,7 @@ text = "Mod Name | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer2"]
+[node name="LineEditName" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
@@ -80,7 +80,7 @@ text = "Mod Author | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer3"]
+[node name="LineEditAuthor" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
@@ -98,7 +98,7 @@ text = "Mod Description | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer4"]
+[node name="LineEditDesc" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
@@ -116,7 +116,7 @@ text = "Object Prefix* | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer5"]
+[node name="LineEditPrefix" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
@@ -134,7 +134,7 @@ text = "Load Priority | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer6"]
+[node name="LineEditPrio" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer6"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
@@ -152,7 +152,11 @@ text = "Mod Version | "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer7"]
+[node name="LineEditVersion" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer7"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
+
+[node name="Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Save"
