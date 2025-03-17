@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://etju47k5hhbk"]
 
-[ext_resource type="Script" path="res://assets/scripts/metadata_editor.gd" id="1_hsty0"]
+[ext_resource type="Script" uid="uid://bqwi8hehj88pe" path="res://assets/scripts/metadata_editor.gd" id="1_hsty0"]
 [ext_resource type="PackedScene" uid="uid://bnpegha56kpfm" path="res://scenes/repeatable/background.tscn" id="2_jq27d"]
 [ext_resource type="FontFile" uid="uid://bq5g6yab5irhe" path="res://assets/fonts/m6x11plus.ttf" id="3_odo7h"]
 

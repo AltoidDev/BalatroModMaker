@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bnpegha56kpfm"]
 
-[ext_resource type="Shader" path="res://assets/shaders/background.gdshader" id="1_dlqt0"]
+[ext_resource type="Shader" uid="uid://8b3wqnvvgi3u" path="res://assets/shaders/background.gdshader" id="1_dlqt0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fyh4w"]
 shader = ExtResource("1_dlqt0")
@@ -12,7 +12,7 @@ shader_parameter/spin_rotation = 0.0
 shader_parameter/spin_speed = 2.0
 shader_parameter/offset = Vector2(0, 0)
 shader_parameter/colour_1 = Color(0.827451, 0, 0, 1)
-shader_parameter/colour_2 = null
+shader_parameter/colour_2 = Color(0, 0, 0, 1)
 shader_parameter/colour_3 = Color(0, 0, 0.607843, 1)
 shader_parameter/contrast = 2.17
 shader_parameter/lighting = 0.79
