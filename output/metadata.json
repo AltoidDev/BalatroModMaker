@@ -1,14 +1,1 @@
-{
-	"id": "",
-	"name": "",
-	"display_name": "",
-	"author": [""],
-	"description": "",
-	"prefix": "",
-	"main_file": "",
-	"priority": 0,
-	"badge_colour": "",
-	"badge_text_colour": "",
-	"version": "",
-	"dependencies": [],
-}
+{"author":["asd","NovaBalatroEditor"],"description":"dsa","id":"asd","name":"asd","prefix":"as","priority":2,"version":"2.1.3"}

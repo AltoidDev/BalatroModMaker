@@ -33,7 +33,6 @@ horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -47,11 +46,12 @@ vertical_alignment = 1
 [node name="LineEditID" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Can be anything unique [NO SPACES]"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -65,11 +65,12 @@ vertical_alignment = 1
 [node name="LineEditName" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Can be anything"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
@@ -83,11 +84,12 @@ vertical_alignment = 1
 [node name="LineEditAuthor" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Can be anything"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
@@ -101,11 +103,12 @@ vertical_alignment = 1
 [node name="LineEditDesc" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Can be anything"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="HBoxContainer5" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
@@ -119,11 +122,12 @@ vertical_alignment = 1
 [node name="LineEditPrefix" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Can be anything [NO SPACES]"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="HBoxContainer6" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer6"]
 layout_mode = 2
@@ -137,11 +141,12 @@ vertical_alignment = 1
 [node name="LineEditPrio" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer6"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Any integer [LOADED LOWEST TO HIGHEST]"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="HBoxContainer7" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer7"]
 layout_mode = 2
@@ -155,8 +160,12 @@ vertical_alignment = 1
 [node name="LineEditVersion" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer7"]
 layout_mode = 2
 size_flags_horizontal = 3
+placeholder_text = "Has to follow the format X.X.X [Major.Minor.Patch]"
 alignment = 1
+emoji_menu_enabled = false
 
 [node name="Button" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 text = "Save"
+
+[connection signal="pressed" from="Control/VBoxContainer/Button" to="." method="_on_button_pressed"]
