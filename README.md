@@ -1,4 +1,4 @@
-No longer under development as steamodded's documentation is too bad for me to figure out how to use it. If anyone who knows how to use it see this, please contact me.
+No longer under development as steamodded's documentation is too bad for me to figure out how to use it. If anyone who knows how to use it sees this, please contact me.
 
 ------------------------------------------
 
