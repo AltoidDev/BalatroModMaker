@@ -1,3 +1,7 @@
+No longer under development as steamodded's documentation is too bad for me to figure out how to use it. If anyone who knows how to use it see this, please contact me.
+
+------------------------------------------
+
 Mods will require [steamodded](https://github.com/Steamodded/smods), and I will try to update it to use the same version as [Cryptid](https://github.com/MathIsFun0/Cryptid).
 
 ------------------------------------------
